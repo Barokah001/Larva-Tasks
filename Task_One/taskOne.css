@@ -1,0 +1,408 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+button, .btn {
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+    font-family: 'Cinzel', serif;
+}
+.nav-bar {
+    max-height: 70px;
+    width: 100%;
+    background-color: #ffffff;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: black;
+    padding-left: 40px;
+}
+
+.btn {
+    background-color: #b8400e;
+    color: #ffffff;
+    border: none;
+    padding: 15px 60px;
+    margin: 20px;
+} 
+
+.hero-section {
+    background:url(/Restaurants_Images/hero-bg.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    width: 100%;
+    position: relative;
+}
+.opacity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.486);
+    color: #ffffff;
+}
+
+.text-content {
+    width: 50%;
+}
+
+.big-text {
+    font-weight: bolder;
+    font-size: 2em;
+    line-height: 1.4em;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.big-text .coloured-text {
+    color: #b8400e;
+    text-transform: capitalize;
+}
+
+.small-text {
+    font-size: 1em;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.two {
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #b8400e;
+}
+
+.two:hover {
+    background-color: #b8400e;
+}
+
+.about {
+    position: absolute;
+    bottom: -120px;
+    background-color: #fefefe;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 25px;
+    margin: 40px;
+    height: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.486);
+}
+
+.about .content {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.about .content h3{
+    margin: 15px 0;
+}
+.icon {
+    font-size: 1.5em;
+    color: #b8400e;
+}
+
+.text-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #e9a48757;
+    backdrop-filter: blur(10px);
+    margin: 40px 10px 0 0;
+}
+
+.our-menu {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.our-menu .heading {
+    margin: 50px 0 20px 0;
+}
+
+.menu-cards {
+    margin: 20px 0;
+    display: flex;
+    flex: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.card {
+    background-color: #ffffff;
+    color: black;
+
+}
+
+.card img {
+    width: 320px;
+    height: 250px;
+}
+
+.card {
+    height: 400px;
+    width: 320px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.icons {
+    color: #b8400e;
+}
+
+.menu {
+    margin: 10px;
+}
+
+.bio {
+    max-height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f8fa;
+    margin: 80px 0;
+}
+
+.bio-img img {
+    height: 450px;
+    width: fit-content;
+}
+
+.bio-text-content {
+    height: 450px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+    text-align: center;
+    line-height: 2;
+}
+
+/* REVIEWS */
+.reviews {
+    max-height: 400px;
+    background-color: #fefefe;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.reviews p {
+    margin: 20px;
+}
+
+.review-heading {
+    margin-bottom: 10px;
+}
+
+.review-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.rcard {
+    border: 2px solid #b8400e;
+    border-radius: 14px;
+    height: 250px;
+    padding: 10px;
+    margin: 30px 0;
+}
+
+.rcard p {
+    margin: 20px 0;
+}
+
+.rcard h4 {
+    color: #c9c9ce;
+}
+
+.img-name {
+    display: flex;
+    flex: row;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.img-name .name {
+    width: 60%;
+}
+
+.img-name img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+}
+/* ................................... */
+
+/* BOOKINGS */
+.booking {
+    background-image: url(/Restaurants_Images/hero-bg.jpg);
+    background-size: 100%;
+    width: 100%;
+    height: 500px;
+}
+
+.book {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bookingcontent {
+    margin: 40px;
+    text-align: center;
+}
+
+.bookingcontent h1 {
+    padding: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.form {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 20px;
+    text-align: right;
+}
+
+input {
+    padding: 20px 100px 20px 10px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #fefefe;
+    border: 2px solid #b8400e;
+}
+
+input::placeholder {
+    text-align: start;
+    color: #ffffff;
+}
+
+/* SUBSCRIBE */
+.subscribe {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fefefe;
+}
+
+.sub-content {
+    margin: 40px;
+    text-align: center;
+}
+.sub-content h1 {
+    padding: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+
+/* FOOTER */
+.footer {
+    background-color: #b8400e;
+    color: #fefefe;
+    height: 500px;
+
+}
+.top-foot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foot {
+    margin: 60px 0;
+    padding: 40px;
+    height: 300px;
+}
+
+.company ul li {
+    list-style: none;
+    padding: 12px 0;
+    align-items: start;
+}
+
+.company ul li a {
+    text-decoration: none;
+    display: block;
+    color: #fefefe;
+    transition: all 0.3s ease;
+}
+
+.company ul li a:hover {
+    color: #ffffff;
+    padding-left: 10px;
+}
+
+.line-icons {
+    font-size: 2em;
+    color: #b8400e;
+}
+
+.foot-icon {
+    padding-top: 20px;
+    color: #fefefe;
+}

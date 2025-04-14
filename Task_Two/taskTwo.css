@@ -1,0 +1,532 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-bar {
+  max-height: 70px;
+  width: 100%;
+  background-color: #ffffff;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+  top: 0;
+  z-index: 1;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.dropdown a {
+  text-decoration: none;
+  color: black;
+  padding-left: 40px;
+}
+.drop-down {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background: #ffffff;
+  z-index: 99;
+  top: 40px;
+  right: 210px;
+}
+
+.drop-down a {
+  padding: 10px 2px;
+  color: black;
+  width: 100%;
+  transition: 0.33 ease;
+}
+
+.drop-down a:hover {
+  background-color: #f8f8fa;
+}
+
+nav .dropdown:hover .drop-down {
+  display: flex;
+}
+
+.btn {
+  background-color: #b8400e;
+  color: #ffffff;
+  border: none;
+  padding: 15px 60px;
+  margin: 20px;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .nav-bar {
+        width: 100%;
+        height: 200px;
+        align-items: start;
+        padding: 10px;
+        align-items: start;
+    }
+
+    .nav-bar .logo {
+      margin-left: 300px;
+    }
+
+    nav {
+        display: none;
+        padding: 15px 0;
+    }
+
+    .nav-bar .button {
+      display: none;
+    }
+
+    .menu-icon {
+      display: block;
+      font-size: 2em;
+      color: #b8400e;
+    }
+}
+
+/* HERO SECTION */
+
+.hero-section {
+  background: url(/Restaurants_Images/hero-bg.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: fixed;
+  width: 100%;
+  position: relative;
+}
+.opacity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.486);
+  color: #ffffff;
+}
+
+.text-content {
+  width: 50%;
+}
+
+
+.small-text {
+  font-size: 1em;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.two {
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #b8400e;
+}
+
+.two:hover {
+  background-color: #b8400e;
+}
+
+@media (min-width:768px) and (max-width:991px) {
+  .hero-section {
+  background: url(/Restaurants_Images/hero-bg.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: fixed;
+  width: 100%;
+  position: relative;
+}
+
+.opacity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.486);
+  color: #ffffff;
+}
+
+  .text-content {
+  width: 50%;
+  margin: 50px 0 40px 300px;
+  margin-left: 200px;
+  padding:30px 20px;
+}
+  .big-text {
+  font-weight: bolder;
+  font-size: 2.5em;
+  line-height: 0.9em;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+
+.small-text {
+  font-size: 1em;
+  padding: 0 10px;
+}
+
+.text-content .button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.one {
+  padding: 15px 50px;
+}
+
+.two {
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #b8400e;
+  padding: 15px 50px;
+}
+
+.img {
+  display: none;
+}
+
+}
+
+/* MESSAGE SECTION */
+.message {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  padding: 32px 32px 0 32px;
+}
+
+.input-container .heading {
+  display: flex;
+  align-self: self-start;
+  justify-content: left;
+  margin: 10px 80px 10px 0;
+  padding-right: 30px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px 0 0 ;
+  width: 50%;
+  height: auto;
+}
+
+input {
+  padding: 20px 110px 20px 10px;
+  border: none;
+  outline: 0;
+  background: #f8f8fa;
+  margin: 10px;
+  gap: 5px;
+}
+
+input::placeholder {
+  text-align: start;
+  color: black;
+}
+
+.empty-box {
+  padding: 115px 225px;
+}
+
+.message-img img {
+  height: 490px; 
+  width: 605px; 
+  margin-left: 40px
+}
+
+.button-address {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 25px;
+}
+
+.message-button {
+    margin: 0 0 140px;
+    padding: 0;
+}
+
+.address-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 40px 90px;
+    width: 50%;
+}
+
+.address {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    font-size: 1.5em;
+    color: #b8400e;
+}
+
+.address-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #e9a48757;
+    backdrop-filter: blur(10px);
+    margin: 40px 10px 0 0;
+}
+
+.address-text {
+    padding-top: 32px;
+}
+
+@media (min-width:768px) and (max-width:991px) {
+  .message {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 32px;
+}
+
+.input-container .message-heading {
+  display: block;
+  text-align: center;
+  width: 100%;
+  /* margin-left: 100px; */
+}
+
+.input-container {
+  display: block;
+  align-items: center;
+  margin: 40px 0 40px 270px;
+  width: 90%;
+  height: auto;
+}
+
+.message-button {
+    margin: 0 0 140px 25px;
+    padding: 0;
+}
+
+input {
+  padding: 20px 35px 20px 10px;
+  border: none;
+  outline: 0;
+  background: #f8f8fa;
+  margin: 10px;
+  gap: 5px;
+}
+
+.empty-box {
+  padding: 115px 140px;
+}
+
+.message-img img {
+  margin-left: 280px;
+  width: 440px;
+  height: 390px;
+}
+
+.button-address {
+  display: block;
+  margin-left: 370px;
+}
+
+.address-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+}
+
+/* MAP SECTION */
+img {
+  height: 450px;
+  width: 100%;
+}
+
+@media (min-width:768px) and (max-width:991px) {
+
+}
+
+/* BOOKINGS SECTION */
+.booking {
+  background-image: url(/Restaurants_Images/hero-bg.jpg);
+  background-size: 100%;
+  width: 100%;
+  height: 500px;
+}
+
+.book {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bookingcontent {
+  margin: 40px;
+  text-align: center;
+}
+
+.bookingcontent h1 {
+  padding: 20px;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  gap: 20px;
+  text-align: right;
+}
+
+.booking-input {
+  padding: 20px 100px 20px 10px;
+  background-color: rgba(0, 0, 0, 0);
+  color: #fefefe;
+  border: 2px solid #b8400e;
+}
+
+.form input::placeholder {
+  text-align: start;
+  color: #ffffff;
+}
+
+@media (min-width:768px) and (max-width:991px) {
+  .bookingcontent {
+  margin: 40px;
+  text-align: center;
+  margin-left: 300px;
+}
+  .form {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 30px 20px;
+  gap: 10px;
+  text-align: right;
+  margin-left: 300px;
+}
+
+.booking-input {
+  padding: 20px 40px 20px 10px;
+  background-color: rgba(0, 0, 0, 0);
+  color: #fefefe;
+  border: 2px solid #b8400e;
+  margin-right: 60px;
+}
+}
+
+/* SUBSCRIBE SECTION*/
+.subscribe {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fefefe;
+}
+
+.sub-content {
+  margin: 40px;
+  text-align: center;
+}
+.sub-content h1 {
+  padding: 20px;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.input .colored-border {
+  border: 2px solid #b8400e;
+  background-color: #fefefe;
+}
+
+.input input::placeholder {
+  text-align: start;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #b8400e;
+  color: #fefefe;
+  height: 500px;
+}
+.top-foot {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.foot {
+  margin: 60px 0;
+  padding: 40px;
+  height: 300px;
+}
+
+.company ul li {
+  list-style: none;
+  padding: 12px 0;
+  align-items: start;
+}
+
+.company ul li a {
+  text-decoration: none;
+  display: block;
+  color: #fefefe;
+  transition: all 0.3s ease;
+}
+
+.company ul li a:hover {
+  color: #ffffff;
+  padding-left: 10px;
+}
+
+.line-icons {
+  font-size: 2em;
+  color: #b8400e;
+}
+
+.foot-icon {
+  padding-top: 10px;
+  color: #fefefe;
+}
+
+footer h4 {
+  margin: 40px 0 0 10px;
+}
+
